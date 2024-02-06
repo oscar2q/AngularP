@@ -1,0 +1,13 @@
+@if(nameHero.length > 0){
+  <h2>Herues Borrado {{nametemp}}</h2>
+}@else{
+  <h2>No hay ningun Herue</h2>
+}
+  <ul>
+    <button (click)="borrarHerous()">Borrar ultimo herue</button>
+    @for(item of nameHero; track item){
+      <li>{{item}}</li>
+    }@empty {
+      <li>Ningun Herue</li>
+    }
+  </ul>

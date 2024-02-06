@@ -1,0 +1,26 @@
+<h2>{{name}}</h2>
+<dl>
+  <td>Nombre</td>
+  <dd>{{name}}</dd>
+
+  <td>Edad</td>
+  <dd>{{edad}}</dd>
+
+  <td>metodo</td>
+  <dd> algun Metodo </dd>
+
+  <td>Capitalizado</td>
+  <dd> nombre capitalizado </dd>
+
+  <td>Nombre</td>
+  <dd> yo </dd>
+
+</dl>
+
+@if(name==='Victory'){
+  <button (click)="setname()">Cambiar Nombre</button>
+}
+@if(edad===21){
+  <button (click)="setedad()" >Cambiar Edad</button>
+}
+<button (click)="reset()" >Reset</button>
