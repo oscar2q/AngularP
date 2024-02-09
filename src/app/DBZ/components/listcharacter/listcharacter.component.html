@@ -1,0 +1,11 @@
+<h3>Listados de personajes</h3>
+<ul>
+<!---ok index es elemento actual ubicado es bueno--->
+@for(item of characterdbz; track item.name;let indi=$index){
+  <!----1- la condicion en tal caso que la cumpla la clase en tal caso que no la cumpla la otra clase o nada ---->
+  <li [ngClass]="indi==1 ?'yes':'no' " >{{indi}} {{item.name}} - {{item.power}} - {{item.id}}</li>
+  <button (click)="Deletemen(item.id)">X</button>
+}@empty {
+  <li>No hay datos que mostrar...</li>
+}
+</ul>

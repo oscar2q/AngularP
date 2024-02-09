@@ -1,0 +1,7 @@
+<h1>DBZ</h1>
+<!---le pasamos nuestro lista que esta en el main a nuestro hijo
+listcomponent---->
+<app-listcharacter-DBZ [characterdbz]="getCharacters()"
+  (deletecharacter)="deleteCharater($event)" />
+<!----estamos recibiendo algo-->
+<app-addforms-dbz (onNewCharacter)="SaveCharacters($event)"/>

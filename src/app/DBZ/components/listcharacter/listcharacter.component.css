@@ -1,0 +1,9 @@
+.no{
+  color: #00758d;
+  font-weight: 600;
+}
+.yes{
+  color: blueviolet;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

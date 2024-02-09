@@ -1,0 +1,16 @@
+<!----cuando tienen () es un evento....
+  cuando tienen [] es un atributo
+cuando tienen [()] es un atributo evento-->
+<!--- ngSubmit nos permite que el formulario no recargue la pagina--->
+
+<form (ngSubmit)="savecharacter()">
+  <p><label name="name" id="name">Ingrese nombre</label></p>
+    <input  [(ngModel)]="characterdbz.name" type="text" name="nombre" placeholder="Ingrese un dato..." />
+
+    <p><label name="poder" id="poder" >Ingrese el nivel de poder</label></p>
+    <input  [(ngModel)]="characterdbz.power" type="number" name="power" placeholder="Ingrese un dato..."/>
+    <p><button >Enviar</button></p>
+</form>
+<!---conviertes mis objectos en json que pude leer javascrip-->
+<p>{{characterdbz | json }}</p>
+
